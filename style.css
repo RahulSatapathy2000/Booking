@@ -1,0 +1,1002 @@
+/* navbar */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.section1 {
+  background: url("image/wallpaper.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 3px 30px;
+}
+
+.navtext {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Tiro Tamil", serif;
+}
+.textInside {
+  color: white;
+}
+.GetTheApp {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Tiro Tamil", serif;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 4px 24px;
+  text-decoration: none;
+  color: white;
+}
+.signUpFont:hover {
+  background-color: #9ee4ea;
+  color: #093d62;
+}
+.signUpFont {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Tiro Tamil", serif;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 4px 24px;
+  text-decoration: none;
+  color: white;
+}
+.welcomeSection1 {
+  padding-top: 20%;
+  font-size: 2.8vw;
+  font-family: "Abhaya Libre Medium", serif;
+  font-weight: 500;
+}
+.welcomeSection2 {
+  font-size: 1.5vw;
+  font-family: "Abhaya Libre Medium", serif;
+  font-weight: 500;
+}
+
+.buttonSection {
+  border-radius: 10px;
+  font-family: "Tiro Tamil", serif;
+  font-weight: 500;
+}
+.arrowLogoSize {
+  width: 36px;
+  height: 20px;
+}
+
+/* --Search bar Form Section-- */
+
+/* -----  */
+.section1Container {
+  margin-top: -14vh;
+  padding-top: 85vh;
+}
+.formSection {
+  border-radius: 10px;
+  background-color: #041d2bbf;
+  margin-top: -20vh;
+  margin-bottom: 22px;
+}
+.formSection label {
+  font-family: "Tiro Tamil";
+}
+.formDesign {
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.inputImage1 {
+  background-image: url("Image/Place\ Marker.png");
+}
+.inputImage2 {
+  background-image: url("Image/Account.png");
+}
+.inputImage3 {
+  background-image: url("Image/Money\ Bag.png");
+}
+.inputImage4 {
+  background-image: url("Image/Calendar.png");
+}
+.inputImageSize {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  background-color: #042f51;
+  color: white;
+}
+.inputImageSize::placeholder {
+  color: white;
+  padding-left: 5px;
+  font-size: 10px;
+  font-family: "Tiro Tamil";
+  font-weight: 300;
+}
+
+.searchBtnBg {
+  height: auto;
+  background-color: #0862a3;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Tiro Tamil", serif;
+}
+
+.searchBtn {
+  background-color: #0862a3;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* -----  */
+.imageSection {
+  background: #dbe9f2;
+  height: 640px;
+  overflow: hidden;
+}
+.image1 {
+  height: 550px;
+  margin: 20px;
+}
+.image2 {
+  height: 400px;
+  margin-left: -310px;
+}
+.image3 {
+  height: 300px;
+  margin-left: -180px;
+}
+.writingSection {
+  padding: 48px 50px 40px 80px;
+}
+.writingSection p {
+  color: #042f51;
+}
+.firstParagraph {
+  font-family: "Tiro Tamil", serif;
+  font-size: 20px;
+}
+.fontHeader {
+  font-family: "Abhaya Libre Medium", serif;
+  font-size: 40px;
+  line-height: 30px;
+}
+.lastParagraph {
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 16px 70px 0px 24px;
+  font-size: 16px;
+}
+.readMore {
+  font-family: "Tiro Tamil", serif;
+  background: #0862a3;
+  padding: 14px 55px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+/* grid image section  */
+
+.grid_container {
+  padding: 50px 100px;
+}
+.grid_container h1 {
+  font-size: 48px;
+}
+
+.imageContainer {
+  height: 380px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: #093d62;
+}
+
+/* Hover Effect */
+.imageContainer:hover {
+  background-color: #c8f5ff;
+  color: #093d62;
+  transform: scale(1.05);
+}
+
+.imageSize {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+/* Scale image on hover */
+.imageContainer:hover .imageSize {
+  transform: scale(1.15);
+}
+
+/* Text content styling */
+.textContent {
+  color: #093d62;
+}
+
+.imageText {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: -40px;
+  text-align: left;
+  padding-left: 10px;
+  font-family: "Shanti", sans-serif;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.imageSubtext {
+  font-size: 16px;
+  margin: 20px 0px 0px;
+  text-align: left;
+  font-family: "Tiro Tamil", sans-serif;
+  color: #093d62;
+  line-height: 24px;
+}
+
+.containerParagraph {
+  font-size: 11px;
+  margin-top: 2px;
+  text-align: left;
+  color: #093d62;
+}
+
+/*------------------------------------------ neon background ---------------------------------------------- */
+
+.neonBackground {
+  background: url("Image/neon-background-image.jpg") rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 721px;
+  top: 2922px;
+}
+.neonContainer {
+  height: 721px;
+}
+
+.neonHeader {
+  color: white;
+  padding: 120px 0 0 70px;
+  font-weight: lighter;
+  font-size: 45px;
+  line-height: 60px;
+  font-family: "Abhaya Libre Medium";
+}
+.neonParagraph {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  padding: 0 180px 50px 70px;
+}
+.neonImage {
+  padding: 0 0 0 70px;
+}
+
+/* --- */
+.containerPragraph {
+  font-weight: 500;
+  font-size: 12px;
+  color: #093d62b2;
+  font-family: "Shanti", serif;
+}
+.topHotel {
+  background: #093d62;
+  display: inline;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+  font-weight: 400;
+  margin-right: 16px;
+}
+.spanText {
+  font-size: 16px;
+  font-weight: 500;
+  color: #093d62;
+}
+
+/* ----  */
+
+.headerImage-1 {
+  background: #0a3c64;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 70px;
+  font-family: "Abhaya Libre Medium";
+  border: 1px solid #0a3c64;
+  background-color: #dbe9f2;
+  width: 20vw;
+  padding: 60px 0px 60px 30px;
+  z-index: 1;
+}
+
+.headerImage-2 {
+  width: 25vw;
+  height: 25vh;
+  margin-top: 30px;
+  padding-left: 11px;
+}
+.headerImage-3 {
+  width: 21.5vw;
+  height: 30vh;
+}
+.headerImage-4 {
+  width: 27vw;
+  height: 50vh;
+  margin: -200px 0px 0px -14px;
+}
+
+.chooseContainer {
+  background: #0a3c64;
+  width: 100%;
+  height: 797px;
+  top: 4335px;
+}
+.loremContainer {
+  padding: 120px 50px 80px 50px;
+}
+.loremText {
+  color: #dbe8f2;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+/* ------  */
+
+.uspContainer {
+  height: 90vh;
+}
+
+.uspBorder {
+  border: 2px solid #093d62;
+}
+
+.uspHeader {
+  font-family: "Tiro Tamil";
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.uspReadMore {
+  background: #0862a3;
+  color: white;
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Tiro Tamil";
+  font-size: 16px;
+}
+
+.uspH4Header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #0a3c64;
+}
+.uspParagraph {
+  padding: 20px;
+  color: #093d62;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* ---  */
+
+.worldImageSection {
+  width: 100%;
+  height: 628px;
+  background: #093d62;
+}
+
+/* .worldHeader {
+  color: #5bb3f2;
+} */
+
+/* .worldRow {
+  margin: 200px 30px 0px 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+  */
+
+/* .worldSpan {
+  font-family: "serif";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  width: 250px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.worldImage {
+  margin-top: 40%;
+} */
+
+/* ------  */
+.stats-section {
+  background-color: #0a3c60; /* Dark blue background */
+  color: #8fc6ff; /* Light blue text color */
+  padding: 50px 0;
+}
+.stats-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.stats-item h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.stats-item p {
+  font-size: 16px;
+}
+
+/* -----  */
+
+.ratingColor i {
+  color: rgb(255, 191, 0);
+}
+.ratingSection {
+  width: 100%;
+  height: 700px;
+}
+.ratingParagraph {
+  padding: 10px 120px;
+  font-weight: 700;
+  color: #093d62;
+}
+.ratingImage {
+  padding-top: 80px;
+}
+
+/* --footer-- */
+
+.footerContainer {
+  background: #093d62;
+  width: 100%;
+  height: 447px;
+}
+.footerRow {
+  padding: 80px;
+  color: white;
+}
+.footerRow p,
+a {
+  font-weight: 350;
+}
+
+.footerRow div h5 {
+  font-size: 20px;
+  font-family: "Tiro Tamil";
+}
+.footerCol1 h6 {
+  font-size: 14px;
+  color: #00f0ff;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.footerCol1 p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.footerCol2 ul {
+  line-height: 35px;
+}
+.footerCol2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerCol3 input {
+  width: 100%;
+  background-color: #1f4d6e;
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  padding: 5px 16px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.customPlaceholder::placeholder {
+  color: rgb(189, 184, 184);
+}
+
+.footerCol3 a {
+  color: white;
+  font-size: 20px;
+  padding-right: 16px;
+}
+
+.footerEnd {
+  width: 100%;
+  height: 89px;
+  background: #042f51;
+}
+.thickLine {
+  height: 2.5px;
+  margin: 0px;
+  background: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+
+.footerEnd div {
+  font-weight: 350;
+  font-size: 14px;
+}
+
+/* ------------------------- About Page ----------------------- */
+
+.aboutHome {
+  height: 110vh;
+  background-color: bisque;
+  margin-top: -14vh;
+}
+.aboutContainer {
+  height: 100%;
+  color: white;
+}
+.aboutSection1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 40%;
+  height: 100%;
+  border: 1px solid white;
+  background-color: #042f51;
+  margin-top: -30vh;
+}
+.aboutHome h4 {
+  padding: 100px;
+}
+/* ----------------------- why us section ------------------- */
+
+.why_us_section {
+  margin: 50px 130px;
+  /* border: 3px solid red; */
+}
+.insidewh {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+.why_us_section h1 {
+  font-size: 55px;
+  padding-top: 5px;
+}
+.insideWhyUsBg {
+  height: 25rem;
+  width: 58rem;
+  background-color: #093d62e8;
+  margin-left: -4rem;
+  box-shadow: 10px 10px 5px rgb(136, 163, 163);
+}
+.insideWhyUsBg h2 {
+  font-family: "Poppins", sans-serif;
+  padding: 55px 85px 30px 45px;
+  line-height: 50px;
+  font-size: 32px;
+}
+.insideWhyUsBg p {
+  padding: 0px 90px 0px 60px;
+}
+.outerWhyUsBg {
+  width: 60rem;
+  height: 28rem;
+  background-color: #0ca5af70;
+  z-index: -1;
+  margin-left: -36rem;
+  box-shadow: 10px 10px 10px rgb(171, 167, 167);
+}
+
+.whyUs_last {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* --------Stats Section------------ */
+
+.statsSection {
+  padding: 50px 0;
+}
+.statsItem {
+  text-align: center;
+  padding: 0px;
+}
+.statsItem h2 {
+  color: #183c56;
+  margin-bottom: 10px;
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.statsItem p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #042f51;
+  margin-top: 10px;
+  font-family: "Abhaya Libre Medium", serif;
+}
+.lineBetween {
+  height: 1px;
+  background-color: black;
+}
+/* Adding vertical borders */
+.border-middle {
+  border-left: 2px solid #1a3e5e;
+  border-right: 2px solid #1a3e5e;
+}
+
+/* <!-------------------------- services ---------------------------- --> */
+/* (1123) */
+
+.services {
+  padding: 40px;
+  height: 47rem;
+}
+.services h1 {
+  font-size: 55px;
+  font-family: "Abhaya Libre Medium", serif;
+  color: white;
+  padding: 20px 70px;
+}
+
+.box {
+  width: 355px;
+  height: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(19, 14, 14, 0.1);
+  color: #333;
+  margin-top: 48px;
+}
+.box img {
+  height: 75px;
+  width: 75px;
+}
+
+/* Background colors for each box */
+.box1 {
+  background-color: #ffffff;
+  transform: translateY(0px) translateX(0px);
+}
+
+.box2 {
+  background-color: #0ca5af;
+  color: #ffffff;
+  transform: translateY(130px) translateX(0px);
+}
+
+.box3 {
+  background-color: #ffffff;
+  transform: translateY(250px) translateX(0px);
+}
+
+/* Icon styling */
+
+/* Title and description styling */
+.box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 5px;
+  color: #042f51;
+  font-family: "Poppins", sans-serif;
+}
+.box p {
+  font-size: 14px;
+  margin-top: 20px;
+  padding-left: 5px;
+  color: #093d62;
+  font-family: "Poppins", sans-serif;
+}
+
+/*------------------------ our story -------------------------- */
+
+.ourStory h1 {
+  background: #093d62;
+  padding: 45px 100px;
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  font-family: "Abhaya Libre Medium", serif;
+}
+.ourStoryPara {
+  padding: 30px 0px 20px 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* ------------------------------ world image ------------------------------- */
+
+.statistics-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 180px 0 100px 50px;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  background-color: #093d62;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat-box {
+  width: 45%;
+  display: flex;
+}
+
+.stat-number {
+  font-size: 54px;
+  margin-right: 15px;
+  padding-top: 0;
+  font-weight: bold;
+  color: #5bb3f2;
+  font-family: "poppins";
+}
+
+.stat-text {
+  font-size: 16px;
+  color: #5bb3f2;
+  font-family: "poppins";
+}
+
+.right-section {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+/* --------------------------- testimonial ------------------------------ */
+.testimonial h1 {
+  font-size: 48px;
+  font-family: "Tiro Tamil", serif;
+  margin: 30px 0 90px 0;
+}
+.ratingBox {
+  width: 240px;
+  height: 390px;
+  margin: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #5bb3f224;
+  box-shadow: 3px 3px 5px rgb(162, 156, 156);
+}
+.ratingBox img {
+  width: 85px;
+  height: 85px;
+  position: relative;
+  top: -65px;
+}
+.ratingBox h4 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #042f51;
+  margin-top: -50px;
+  margin-bottom: 18px;
+}
+.ratingBox i {
+  color: rgb(255, 183, 0);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.ratingBox p {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* ------------------------------------------- Booking Page Section -------------------------------------- */
+.bookingHeader {
+  height: 200px;
+  background-size: 120%;
+}
+.section2Container {
+  margin-top: 60px;
+  z-index: -1;
+}
+
+/* ----------  */
+
+.showResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: #dbe9f2;
+  margin-top: -75px;
+  padding: 80px 0 20px 0;
+}
+
+.resultProperty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultProperty h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.showResult ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.showResult li {
+  margin: 0 30px; /* Adjust gap between items */
+  font-family: "Tiro Telugu", serif;
+  color: #042f51;
+}
+
+/* -------  */
+.filterBar {
+  background: #041d2bbf;
+}
+.filterBar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+.filterBar li {
+  margin: 10px 40px;
+  font-family: "Tiro Tamil", serif;
+  font-weight: 100;
+  font-size: 13px;
+}
+.filterBar li:hover {
+  color: #10a0aa;
+  cursor: pointer;
+}
+
+/*-------------------------------------- search result section ------------------------------ */
+/*---- right side ---- */
+.filter_option {
+  background: #dbe9f2;
+  padding: 40px 0 0 20px;
+}
+.filter_option input {
+  background: #dbe9f2;
+}
+.hotel_search h2 {
+  font-size: 32px;
+  font-family: "Tiro Tamil", serif;
+  margin: 0;
+}
+.hotel_search p {
+  font-size: 14px;
+  font-family: "Tiro Telugu", serif;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+.hotel_search p span {
+  color: #0ca5af;
+}
+.hotel_result {
+  border: 1px solid rgb(197, 191, 191);
+  border-radius: 15px;
+  box-shadow: 0 3px 5px rgb(161, 156, 156);
+}
+.hotel_info h4 {
+  font-size: 24px;
+  font-family: "Shanti", serif;
+  color: #0ca5af;
+}
+.star_rating {
+  font-size: 13px;
+  color: rgb(255, 166, 0);
+}
+.hotel_desc p {
+  font-size: 12px;
+  font-family: "Shanti", serif;
+  color: #042f51;
+  margin: 0;
+  line-height: 15px;
+}
+
+.hotel_info h5 {
+  font-size: 12px;
+  color: #ce651a;
+}
+.hotel_info h6 {
+  font-size: 11px;
+  color: #04973f;
+  margin-bottom: 0;
+}
+
+/* ------  */
+.rating_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel_rating p {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #042f51;
+  font-weight: bold;
+  font-family: "Shanti", serif;
+}
+.rating_info h5 {
+  color: #0ca5af;
+  font-size: 15px;
+  font-family: "Tiro Tamil", serif;
+  margin-bottom: 0;
+}
+.rating_info h6 {
+  background-color: #093d62;
+  color: white;
+  font-size: 11px;
+  padding: 10px 8px;
+}
+.price_info {
+  margin-top: 40px;
+}
+.price_info h3 {
+  font-family: "Poppins", serif;
+  color: #cd651a;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.price_info button {
+  background: #0862a3;
+  color: white;
+  border: none;
+  font-family: "Tiro Tamil", serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
