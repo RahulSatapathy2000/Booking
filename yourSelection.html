@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Shanti&family=Tiro+Tamil:ital@0;1&display=swap");
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <title>Any Time Stay</title>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <div class="container-fluid p-0">
+    <header class="bookingHeader" style="background-image: url(Image/wallpaper.jpeg)">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a href="#" class="logo">ATS LOGO</a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item navtext mx-3">
+                  <a class="nav-link textInside" href="#">Book Your Stay</a>
+                </li>
+                <li class="nav-item navtext mx-3">
+                  <a class="nav-link textInside" href="#">Explore City</a>
+                </li>
+                <li class="nav-item navtext mx-3">
+                  <a class="nav-link textInside" href="#">Web Checkin</a>
+                </li>
+                <li class="nav-item navtext ms-3 me-5">
+                  <a class="nav-link textInside" href="#">AQI</a>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center mx-4">
+                <a href="#" class="GetTheApp">Get the App
+                  <img src="Image/arrow.png" class="arrowLogoSize ms-2" alt="" /></a>
+                <a href="#" class="signUpFont ms-4">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="position-relative">
+      <div class="container section2Container">
+        <div class="row formSection">
+          <div class="col-sm-2 text-lg-start text-center ps-4 pe-0 my-4">
+            <label class="form-label text-white">Location</label>
+            <input type="text" class="formDesign inputImage1 inputImageSize"
+              placeholder="Jagannath dham, Puri, Odisha" />
+          </div>
+          <div class="col-sm-2 text-lg-start text-center ps-2 pe-0 my-4">
+            <label class="form-label text-white">Rooms & Guests:</label>
+            <input type="text" class="formDesign inputImage2 inputImageSize" placeholder="2 Room, 2 Adult & 1 Child" />
+          </div>
+          <div class="col-sm-2 text-lg-start text-center ps-2 pe-0 my-4">
+            <label class="form-label text-white">Price range:</label>
+            <input type="text" class="formDesign inputImage3 inputImageSize" placeholder="Rs.1000 - Rs.2000" />
+          </div>
+          <div class="col-sm-2 text-lg-start text-center ps-2 pe-0 my-4">
+            <label class="form-label text-white">Check-in:</label>
+            <input type="date" class="formDesign text-white inputImage4 inputImageSize" placeholder="17 Nov 2024" />
+          </div>
+          <div class="col-sm-2 text-lg-start text-center ps-2 pe-2 my-4">
+            <label class="form-label text-white">Check-out:</label>
+            <input type="date" class="formDesign text-white inputImage4 inputImageSize" placeholder="23 Nov 2024" />
+          </div>
+          <div class="col-sm-2 searchBtnBg d-flex justify-content-center align-items-center">
+            <button type="button" class="searchBtn">SEARCH</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------- Searchbar Result Section ------------------------ -->
+    <section class="showResult">
+      <div class="resultProperty">
+        <div>
+          <h2>122 Properties found in Bhubaneswar City</h2>
+        </div>
+        <div>
+          <ul>
+            <li>80 hotels</li>
+            <li>35 villas</li>
+            <li>26 resorts</li>
+            <li>35 apartments</li>
+            <li>35 guest houses</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="filterBar">
+      <ul>
+        <li>Price : low to high</li>
+        <li>Price : high to low</li>
+        <li>User review : highest first</li>
+        <li>Our top picks</li>
+        <li>Most popular</li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="row main_content justify-content-center mt-4 mx-0">
+        <div class="col-3 side_1 overflow-hidden px-0 rounded">
+          <img src="Image/mapImage.png" class="mb-3 mt-1" alt="" />
+          <div class="detail_desc my-3">
+            <h4>Detail description:</h4>
+            <h6>Superior Deluxe Room
+              <br>
+              Fits 2adults & 1 children
+            </h6>
+            <div class="desc_points">
+              <ul class="mb-0">
+                <li>No meals included</li>
+                <li>10% Discount on F&B Services</li>
+                <li>Free Early Check in, Subject to Availability</li>
+                <li>Non-Refundable</li>
+                <li>Free Late check-out, Subject to Availability</li>
+                <li>Free Welcome Drink on Arrival</li>
+                <li>10% Discount on Massage</li>
+                <li>10% Discount on F&B Salon</li>
+              </ul>
+              <ul>
+                <li>10% Discount on F&B Spa</li>
+                <li>10% Discount on F&B Laundry</li>
+                <li>Free Hi-Tea</li>
+                <li>20% Discount on F&B Services</li>
+                <li>Free Room Upgrade, Subject to Availability</li>
+                <li>Free Early Check in, Subject to Availability</li>
+                <li>Free Late check-out, Subject to Availability</li>
+                <li>Free Welcome Drink on Arrival</li>
+              </ul>
+            </div>
+          </div>
+          <div class="check_reviews">
+
+            <h4>Check Reviews :</h4>
+            <div class="d-flex detail_rating_info">
+              <h6>7.2</h6>
+              <div class="inside_rating">
+                <p>(128 reviews)</p>
+                <p>71% guests rated this property</p>
+              </div>
+            </div>
+            <div class="d-flex detail_price_info justify-content-between">
+              <div>
+                <p>5,500</p>
+                <h3>3,453</h3>
+                <p>+350 tax and charges</p>
+              </div>
+              <div>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-7 side_2 pe-0">
+          <div class="hotel_search">
+            <h2>Search results</h2>
+            <p>Home > Bhubaneswar > Most popular > <span> Hotel Crystal crown</span></p>
+            <div class="hr_line"></div>
+            <span class="star_rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+            <h1>Hotel Crystal crown, Patia</h1>
+            <p>Near Iscon temple, patia , 755011, Bhubaneswar, odisha</p>
+          </div>
+          <div>
+            <div class="hotel_container">
+              <div class="hotel_inner_container">
+                <div class="hotel_img_container">
+                  <div class="first_image">
+                    <img src="Image/hotelImage1.png" alt="Large Image">
+                  </div>
+
+                  <div class="rightside_images">
+                    <div class="top_image">
+                      <img src="./Image/hotelImage2.png" alt="Top Image">
+                    </div>
+                    <div class="bottom_image more_photos">
+                      <img src="Image/hotelImage2.png" alt="Small Image 2">
+                      <div class="text_overlay">
+                        <p>+ 35 more photos</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="paras">
+              <p class="mt-4">
+                At the hotel, every room is fitted with a wardrobe. All units in Bobby Premium Residency are equipped
+                with a flat-screen TV and free toiletries. The property is non-smoking and is located 1.1 km from Puri
+                Beach. At the hotel, every room is fitted with a wardrobe. Konark Sun Temple is 36 km from the
+                accommodation. The nearest airport is Biju Patnaik International, 58 km from Bobby Premium Residency,
+                and the property offers a paid airport shuttle service.
+              </p>
+              <p>
+                Set within 3 km of Golden Beach and 600 metres of Jagannath Temple, Bobby Premium Residency provides
+                rooms in Puri. With a terrace, the 3-star hotel has air-conditioned rooms with free WiFi, each with a
+                private bathroom. The property is non-smoking and is located 1.1 km from Puri Beach.
+              </p>
+              <p class="mb-0">
+                Couples particularly like the location — they rated it 9.9 for a two-person trip.
+              </p>
+              <p>
+                Distance in property description is calculated using © OpenStreetMap
+              </p>
+            </div>
+            <div class="hr_line mb-3"></div>
+          </div>
+          <div class="facilities">
+            <h3>Most popular Facilities :</h3>
+            <div class="more_facilities">
+              <div>
+                <i class="fa-solid fa-bell-concierge"></i>
+                <h6>Room services</h6>
+              </div>
+              <div>
+                <i class="fa-solid fa-plane-departure"></i>
+                <h6>Airport shuttle</h6>
+              </div>
+              <div>
+                <i class="fa-solid fa-ban-smoking"></i>
+                <h6>Non-smoking rooms</h6>
+              </div>
+              <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h6>Free WiFi</h6>
+              </div>
+              <div>
+                <i class="fa-solid fa-people-roof"></i>
+                <h6>Family rooms</h6>
+              </div>
+              <h5 class="amenities">+35 Amenities</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container check_filter">
+      <div class="check_availability">
+        <h4>Check Availability :</h4>
+      </div>
+      <div class="update_search_sect pe-0">
+        <div class="update_search">
+          <label for="">Rooms & Guests:</label>
+          <input type="text" class="inputImageSize2 inputImage2" placeholder="2 Room, 2 Adult & 1 Child">
+        </div>
+        <div class="update_search">
+          <label for="">Price range:</label>
+          <input type="text" class="inputImageSize2 inputImage3" placeholder="Rs.1000 - Rs.2000">
+        </div>
+        <div class="update_search">
+          <label for="">Check-in:</label>
+          <input type="date" class="inputImageSize2 inputImage4" placeholder="17 Nov 2024">
+        </div>
+        <div class="update_search">
+          <label for="">Check-out:</label>
+          <input type="date" class="inputImageSize2 inputImage4" placeholder="23 Nov 2024">
+        </div>
+        <div class="update_search">
+          <button>Update Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------- Top Recomendation  ---------------------->
+    <section class="container premium_room px-0">
+      <div>
+        <div class="top_recomended">
+          <h1><span class="prem">Premimum room </span> with balcony <button class="rec">Top
+              Recommended</button>
+          </h1>
+          <h4>Sector 26/2, KIIT squre, patia, Bhubaneswar, Pin- 755011 - <a href="#">Excellent location - show map</a>
+          </h4>
+        </div>
+        <div class="hotel_image_container">
+          <div class="left_section">
+            <div class="in_left_sect">
+              <img src="Image/hotelImage1.png" alt="Image 1">
+              <img src="Image/hotelImage3.png" alt="Image 3">
+            </div>
+            <div class="in_left_sect">
+              <img src="Image/hotelImage5.png" alt="Image 5">
+              <img src="Image/hotelImage4.png" alt="Image 4">
+            </div>
+          </div>
+          <div class="right_section">
+            <div class="room_details">
+              <h4>Room Only</h4>
+              <div>
+                <ul>
+                  <li>No meals included</li>
+                  <li>Free Early Check in, Subject to Availability</li>
+                  <li>10% Discount On Spa & Gym</li>
+                  <li>10% Discount On F&B Services</li>
+                  <li>Free Late check-out, Subject to Availability</li>
+                </ul>
+              </div>
+              <div class="details_footer">
+                <div>
+                  <p>5,500</p>
+                  <h3>3,453</h3>
+                  <p>+350 tax and charges</p>
+                </div>
+                <div>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="room_details">
+              <h4>Room with Breakfast</h4>
+              <div>
+                <ul>
+                  <li>Breakfast meal included</li>
+                  <li>Free Early Check in, Subject to Availability</li>
+                  <li>10% Discount On Spa & Gym</li>
+                  <li>10% Discount On F&B Services</li>
+                  <li>Free Late check-out, Subject to Availability</li>
+                </ul>
+              </div>
+              <div class="details_footer">
+                <div>
+                  <p>5,500</p>
+                  <h3>4,120</h3>
+                  <p>+350 tax and charges</p>
+                </div>
+                <div>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!------------------------ Best at This Price  -------------------------->
+
+    <section class="container premium_room px-0">
+      <div>
+        <div class="top_recomended">
+          <h1><span class="prem">Superior Deluxe room </span> with view <button class="rec">Best at This Price</button>
+          </h1>
+          <h4>Sector 26/2, KIIT squre, patia, Bhubaneswar, Pin- 755011 - <a href="#">Excellent location - show map</a>
+          </h4>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="hotel_image_container">
+          <div class="left_section">
+            <div class="in_left_sect">
+              <img src="Image/hotelImage3.png" alt="Image 1">
+              <img src="Image/hotelImage5.png" alt="Image 3">
+            </div>
+            <div class="in_left_sect">
+              <img src="Image/hotelImage1.png" alt="Image 5">
+              <img src="Image/hotelImage6.png" alt="Image 4">
+            </div>
+          </div>
+          <div class="right_section">
+            <div class="room_details">
+              <h4>Room Only</h4>
+              <div>
+                <ul>
+                  <li>No meals included</li>
+                  <li>Free Early Check in, Subject to Availability</li>
+                  <li>10% Discount On Spa & Gym</li>
+                  <li>10% Discount On F&B Services</li>
+                  <li>Free Late check-out, Subject to Availability</li>
+                </ul>
+              </div>
+              <div class="details_footer">
+                <div>
+                  <p>5,500</p>
+                  <h3>3,453</h3>
+                  <p>+350 tax and charges</p>
+                </div>
+                <div>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="room_details">
+              <h4>Room with Breakfast</h4>
+              <div>
+                <ul>
+                  <li>Breakfast meal included</li>
+                  <li>Free Early Check in, Subject to Availability</li>
+                  <li>10% Discount On Spa & Gym</li>
+                  <li>10% Discount On F&B Services</li>
+                  <li>Free Late check-out, Subject to Availability</li>
+                </ul>
+              </div>
+              <div class="details_footer">
+                <div>
+                  <p>5,500</p>
+                  <h3>4,120</h3>
+                  <p>+350 tax and charges</p>
+                </div>
+                <div>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container px-0 rules">
+      <div class="property_rules">
+        <div class="d-flex justify-content-between">
+          <div class="ms-2">
+            <h3>Property Rules :</h3>
+          </div>
+          <div class="d-flex align-items-end">
+            <h6>Check-in: 2 PM</h6>
+            <h6>Check-out: 12 PM</h6>
+          </div>
+        </div>
+        <div class="hr_line m-2"></div>
+        <div>
+          <ul>
+            <li>Couple, Bachelor Rules</li>
+            <li>Couple Friendly</li>
+            <li>Unmarried couples/guests with Local IDs are allowed.</li>
+            <li>Passport, Aadhar, Driving License and Govt. ID are accepted as ID proof(s)</li>
+            <li>Pets are not allowed</li>
+            <li>Optional : Fee for buffet breakfast: approximately INR 350 for adults and INR 350 for children|Rollaway
+              bed fee: INR 1219.0 per night</li>
+            <li>Restrictions</li>
+            <li>Guest Profile</li>
+            <li>ID Proof Related</li>
+          </ul>
+          <a href="#">Real All Property Rules</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rating & Reviews of Guests Section  -->
+
+    <section">
+      <div class="rating_review">
+        <div class="container p-0">
+          <div class="top_recomended">
+            <h1 class="mb-0"><span class="prem">Rating & Reviews </span> of Guests</h1>
+            <h4>Including Photos, Videos and Reactions</h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-center me-0">
+          <div class="col-3 user_review">
+            <div class="d-flex">
+              <div>
+                <p>7.2</p>
+              </div>
+              <div>
+                <h5>128 User reviews</h5>
+                <h6>53,953 global ratings</h6>
+              </div>
+            </div>
+            <div class="progress_bar">
+              <div>
+                <label for="file">5 Star </label>
+                <progress class="colored" min="0" max="100" value="100">100 </progress>
+                <label for="file"> 35267</label>
+              </div>
+              <div>
+                <label for="file">4 Star</label>
+                <progress class="colored" min="0" max="100" value="80">100 </progress>
+                <label for="file">3121</label>
+              </div>
+              <div>
+                <label for="file">3 Star</label>
+                <progress class="colored" min="0" max="100" value="60">100 </progress>
+                <label for="file">852</label>
+              </div>
+              <div>
+                <label for="file">2 Star</label>
+                <progress class="colored" min="0" max="100" value="40">100 </progress>
+                <label for="file">289</label>
+              </div>
+              <div>
+                <label for="file">1 Star</label>
+                <progress class="colored" min="0" max="100" value="20">100 </progress>
+                <label for="file">52</label>
+              </div>
+            </div>
+            <div class="hr_line"></div>
+            <div>
+              <div>
+                <h5>Rating Categories</h5>
+                <h6>All the ratings in category wise</h6>
+              </div>
+            </div>
+            <div class="rating_bar">
+              <div class="rating_row">
+                <label for="file">Facilities</label>
+                <progress class="colored" min="0" max="100" value="90">100</progress>
+                <label for="file">9.0</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Comfort</label>
+                <progress class="colored" min="0" max="100" value="54">100</progress>
+                <label for="file">5.4</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Location</label>
+                <progress class="colored" min="0" max="100" value="41">100</progress>
+                <label for="file">4.1</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Room</label>
+                <progress class="colored" min="0" max="100" value="86">100</progress>
+                <label for="file">8.6</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Food</label>
+                <progress class="colored" min="0" max="100" value="52">100</progress>
+                <label for="file">5.2</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Services</label>
+                <progress class="colored" min="0" max="100" value="42">100</progress>
+                <label for="file">4.2</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Hygiene</label>
+                <progress class="colored" min="0" max="100" value="92">100</progress>
+                <label for="file">9.2</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Balcony</label>
+                <progress class="colored" min="0" max="100" value="72">100</progress>
+                <label for="file">7.2</label>
+              </div>
+              <div class="rating_row">
+                <label for="file">Hospitality</label>
+                <progress class="colored" min="0" max="100" value="57">100</progress>
+                <label for="file">5.7</label>
+              </div>
+            </div>
+            <div class="hr_line"></div>
+            <div>
+              <div>
+                <h5>Review this Hotel</h5>
+                <h6>Sharing your thoughts with others</h6>
+              </div>
+            </div>
+            <div class="text-center"><button class="review_btn">Write a customer review</button></div>
+          </div>
+          <div class="col-7 user_rating">
+            <h4>Reviews with images</h4>
+            <div class="image_review">
+              <img src="Image/hotelImage1.png" alt="">
+              <img src="Image/hotelImage2.png" alt="">
+              <img src="Image/hotelImage3.png" alt="">
+              <img src="Image/hotelImage4.png" alt="">
+              <img src="Image/hotelImage5.png" alt="">
+              <div class="text_overlay">
+                <p>+ 35 more <br>&nbsp;&nbsp; photos</p>
+              </div>
+            </div>
+            <div class="hr_line my-2"></div>
+            <div class="review_dropdown">
+              <select class="form-select">
+                <option selected>Open this select menu</option>
+                <option value="all">All Reviews</option>
+                <option value="positive">Positive Reviews</option>
+                <option value="negative">Negative Reviews</option>
+                <option value="recent">Most Recent</option>
+                <option value="oldest">Oldest</option>
+                <option value="high_rating">Highest Rated</option>
+                <option value="low_rating">Lowest Rated</option>
+              </select>
+            </div>
+            <div class="review_text">
+              <h5>Tech generated review</h5>
+              <div>
+                <h6>Customers like the lightweight, color, and comfort of the sweatshirt. They mention it looks really
+                  cute, is easy to carry, and has a cool and airy feel. Some are also happy with the warmth and value
+                  for
+                  money. However, some customers have different opinions on the fit, material thickness, and quality.
+                </h6>
+                <h6>AI-generated from the text of customer reviews.</h6>
+              </div>
+            </div>
+            <div class="hr_line mt-1 mb-3"></div>
+            <div class="user_detail">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <div class="circle_responsive"></div>
+                  <div class="name_detail">
+                    <h5>Mansha Obory
+                      <span class="review_star">
+                        <i class="bi bi-star-fill color1"></i>
+                        <i class="bi bi-star-fill color2"></i>
+                        <i class="bi bi-star-fill color2"></i>
+                        <i class="bi bi-star-fill color2"></i>
+                        <i class="bi bi-star-fill color2"></i>
+                      </span>
+                    </h5>
+                    <h6>September 6, 2024</h6>
+                  </div>
+                </div>
+                <div class="like_dislike">
+                  <i class="fa-regular fa-thumbs-up"></i> <span>24</span>
+                  <i class="fa-regular fa-thumbs-down"></i> <span>6</span>
+                </div>
+              </div>
+              <div class="text_review">
+                <h6>Double bed Di-lox Room | Had a great experience service was people were very helpful.</h6>
+                <h6>1st day we have checked in by late night and while night as was not cooling but once we have
+                  complaining at the morning they said we don't have the room after 10 am they said we are shifting the
+                  room. 1st day they are not agreed there is a problem in ac then second day they have resolve the
+                  issue.
+                  So we were tired so slept without ac. It's really bed experience and i would expect refund for one day
+                  stay. But it was the nice stay and prime location market and other stuffs was close to the hotel.</h6>
+              </div>
+            </div>
+            <div class="hr_line mt-1 mb-3"></div>
+            <div class="user_detail">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="circle_responsive"></div>
+                  <div class="name_detail">
+                    <h5>Sushree Sneha Kumari
+                      <span class="review_star">
+                        <i class="bi bi-star-fill color1"></i>
+                        <i class="bi bi-star-fill color1"></i>
+                        <i class="bi bi-star-fill color1"></i>
+                        <i class="bi bi-star-fill color2"></i>
+                        <i class="bi bi-star-fill color2"></i>
+                      </span>
+                    </h5>
+                    <h6>October 6, 2024</h6>
+                  </div>
+                </div>
+                <div class="like_dislike">
+                  <i class="fa-regular fa-thumbs-up"></i> <span>24</span>
+                  <i class="fa-regular fa-thumbs-down"></i> <span>6</span>
+                </div>
+              </div>
+              <div class="text_review">
+                <h6>Superior Room | AC is not working</h6>
+                <h6>They are not agreed there is a problem in ac then second day they have resolve the issue. So we were
+                  tired so slept without ac. It’s really bed experience and i would expect refund for one day stay.</h6>
+              </div>
+            </div>
+            <div class="hr_line mt-1 mb-3"></div>
+          </div>
+        </div>
+        <button class="more_results">See more results</button>
+      </div>
+      </section>
+
+
+      <!----------------------------- Nearby Hotels --------------------------------->
+
+      <section class="grid_container">
+        <h1 class="fontHeader mt-5 ps-md-4 ps-0"><span style="color: #0CA5AF;">Nearby hotels</span> at Patna</h1>
+        <p class="ps-md-4 ps-0">Find hotels in some of the most popular cities in India</p>
+        <div class="row justify-content-evenly">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-3 mt-4 imageContainer">
+            <a href="#">
+              <img src="Image/Hotel urfi.png" class="imageSize" alt="Jaipur" />
+            </a>
+            <div class="textContent">
+              <h3 class="imageText">Hotel urfi</h3>
+              <h6 class="imageSubtext">Near Konark Temple, puri<br>10,294 Properties</h6>
+              <div class="containerParagraph d-flex justify-content-between align-items-center">
+                <p>Puri,Odisha</p>
+                <p class="spanText">5,500</p>
+              </div>
+              <h6 class="topHotel">7.2</h6>
+              <span class="containerPragraph">Very Good, 128 reviews</span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-3 mt-4 imageContainer">
+            <a href="#">
+              <img src="Image/Royal palace.png" class="imageSize" alt="Shillong" />
+            </a>
+            <div class="">
+              <h3 class="imageText">Royal palace</h3>
+              <h6 class="imageSubtext">Crystal crown,Bhubaneswar<br>10,294 Properties</h6>
+              <div class="containerParagraph d-flex justify-content-between align-items-center">
+                <p>Puri,Odisha</p>
+                <p class="spanText">5,500</p>
+              </div>
+              <h6 class="topHotel">8.1</h6>
+              <span class="containerPragraph">Very Good, 128 reviews</span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-3 mt-4 imageContainer">
+            <a href="#">
+              <img src="Image/Hotel urfi.png" class="imageSize" alt="Goa" />
+            </a>
+            <div class="textContent">
+              <h3 class="imageText">Sasthi ma</h3>
+              <h6 class="imageSubtext">Near Konark Temple, puri<br>10,294 Properties</h6>
+              <div class="containerParagraph d-flex justify-content-between align-items-center">
+                <p>Puri,Odisha</p>
+                <p class="spanText">5,500</p>
+              </div>
+              <h6 class="topHotel">7.2</h6>
+              <span class="containerPragraph">Very Good, 128 reviews</span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-3 mt-4 imageContainer">
+            <a href="#">
+              <img src="Image/Nagartun.png" class="imageSize" alt="Gangtok" />
+            </a>
+            <div class="textContent">
+              <h3 class="imageText">Nagartun</h3>
+              <h6 class="imageSubtext">Near Konark Temple, puri<br>10,294 Properties</h6>
+              <div class="containerParagraph d-flex justify-content-between align-items-center">
+                <p>Puri,Odisha</p>
+                <p class="spanText">5,500</p>
+              </div>
+              <h6 class="topHotel">9.1</h6>
+              <span class="containerPragraph">Very Good, 128 reviews</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- footer  -------------->
+
+      <!-- Footer Section -->
+
+      <footer>
+        <div class="container-fluid footerContainer">
+          <div class="row footerRow">
+            <div class="col-12 col-md-4 footerCol1">
+              <h5>CONTACT INFO</h5>
+              <h6>Address</h6>
+              <p>NIFT, near kiit campus 6, patia, bhubaneswar.</p>
+              <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+              <h6>Phone Number</h6>
+              <p>1800 123 4567</p>
+              <h6 class="mt-5">Email Address</h6>
+              <a class="text-decoration-none text-white" href="#">info@hotlfinder.com</a>
+            </div>
+            <div class="col-6 col-md-2 footerCol2">
+              <h5>QUICK LINKS</h5>
+              <ul class="ps-0 mt-4 list-unstyled">
+                <li><a href="">Explore Hotels</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Offers and Events</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Travel Tips</a></li>
+                <li><a href="">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2 footerCol2">
+              <h5>SUPPORT</h5>
+              <ul class="ps-0 mt-4 list-unstyled">
+                <li><a href="">Support Desk</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Carrer</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 footerCol3">
+              <h5>MAILING LIST</h5>
+              <p class="mt-4 pt-2">Sign up for our mailing list to get an latest updates and offers.</p>
+              <input type="mail" placeholder="Your E-mail Address" class="rounded customPlaceholder">
+              <h5 class="mt-5 pt-3">FOLLOW US</h5>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Footer lastpart -->
+      <section class="footerEnd container-fluid pt-4 px-5">
+        <div class="pb-3">
+          <hr class="thickLine">
+        </div>
+        <div class="d-flex text-white row justify-content-around">
+          <div class="col-12 col-md-auto"><i class="bi bi-c-circle"></i> 2024 Hotel Finder. All rights reserved.</div>
+          <div class="col-12 col-md-auto text-center">Privacy Policy</div>
+          <div class="col-12 col-md-auto text-center">Terms of Service</div>
+        </div>
+      </section>
+
+  </div>
+</body>
+
+</html>

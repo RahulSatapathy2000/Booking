@@ -1,108 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Shanti&family=Tiro+Tamil:ital@0;1&display=swap");
-    </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
-      crossorigin="anonymous"
-    />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
-    <title>Any Time Stay</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Shanti&family=Tiro+Tamil:ital@0;1&display=swap");
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous" />
 
-  <body>
-    <!-- Navbar  -->
-    <div class="container-fluid p-0">
-      <header style="background-color: aqua">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <!-- logo -->
-            <a href="#" class="logo">ATS LOGO</a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <title>Any Time Stay</title>
+</head>
 
-            <button
-              class="navbar-toggler shadow-none border-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="sidebar offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1">
-                  <li class="nav-item navtext mx-3">
-                    <a class="nav-link textInside" href="#">Book Your Stay</a>
-                  </li>
-                  <li class="nav-item navtext mx-3">
-                    <a class="nav-link textInside" href="#">Explore City</a>
-                  </li>
-                  <li class="nav-item navtext mx-3">
-                    <a class="nav-link textInside" href="#">Web Checkin</a>
-                  </li>
-                  <li class="nav-item navtext ms-3 me-5">
-                    <a class="nav-link textInside" href="#">AQI</a>
-                  </li>
-                </ul>
-                <div class="d-flex align-items-center mx-4">
-                  <a href="#" class="GetTheApp"
-                    >Get the App
-                    <img
-                      src="Image/arrow.png"
-                      class="arrowLogoSize ms-2"
-                      alt=""
-                  /></a>
-                  <a href="#" class="signUpFont ms-4">Sign Up</a>
-                </div>
+<body>
+  <!-- Navbar  -->
+  <div class="container-fluid p-0">
+    <header style="background-color: aqua">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a href="#" class="logo">ATS LOGO</a>
+
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item navtext mx-3">
+                  <a class="nav-link textInside" href="#">Book Your Stay</a>
+                </li>
+                <li class="nav-item navtext mx-3">
+                  <a class="nav-link textInside" href="#">Explore City</a>
+                </li>
+                <li class="nav-item navtext mx-3">
+                  <a class="nav-link textInside" href="#">Web Checkin</a>
+                </li>
+                <li class="nav-item navtext ms-3 me-5">
+                  <a class="nav-link textInside" href="#">AQI</a>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center mx-4">
+                <a href="#" class="GetTheApp">Get the App
+                  <img src="Image/arrow.png" class="arrowLogoSize ms-2" alt="" /></a>
+                <a href="#" class="signUpFont ms-4">Sign Up</a>
               </div>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
-      <section class="aboutHome">
-        <div class="aboutContainer d-flex">
-          <!-- <div class="">
+    <section class="aboutHome">
+      <div class="aboutContainer d-flex">
+        <!-- <div class="">
                     <div class="box1">
 
                     </div>
@@ -118,45 +87,45 @@
                         <button class="readMore px-5 py-4">Get The App</button>
                     </div>
                 </div> -->
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-------------------------- why choose us section ---------------------------- -->
-      <section>
-        <div class="why_us_section">
-          <h1 class="fontHeader mb-5">
-            Why <span style="color: #0ca5af">Choose</span> Us ?
-          </h1>
-          <div class="row insidewh">
-            <div class="col-3 row border p-0">
-              <div class="col mb-2 p-0">
-                <img src="Image/frontOffice.png" alt="" />
-              </div>
-              <div class="col p-0"><img src="Image/paying.png" alt="" /></div>
+    <!-------------------------- why choose us section ---------------------------- -->
+    <section>
+      <div class="why_us_section">
+        <h1 class="fontHeader mb-5">
+          Why <span style="color: #0ca5af">Choose</span> Us ?
+        </h1>
+        <div class="row insidewh">
+          <div class="col-3 row border p-0">
+            <div class="col mb-2 p-0">
+              <img src="Image/frontOffice.png" alt="" />
             </div>
-            <div class="col-3"><img src="Image/lobby.png" alt="" /></div>
-            <div class="col-6 whyUs_last">
-              <div class="insideWhyUsBg">
-                <h2>
-                  We Know <span style="color: #0ca5af"> & understand</span> your
-                  great choice
-                </h2>
-                <p>
-                  Experience unparalleled comfort and luxury at [Hotel Name],
-                  ideally located in the heart of Bhubaneswar. Our elegantly
-                  designed rooms,! Experience unparalleled comfort and luxury at
-                  [Hotel Name], ideally located in the heart of Bhubaneswar. Our
-                  elegantly designed rooms,!
-                </p>
-              </div>
-              <div class="outerWhyUsBg"></div>
+            <div class="col p-0"><img src="Image/paying.png" alt="" /></div>
+          </div>
+          <div class="col-3"><img src="Image/lobby.png" alt="" /></div>
+          <div class="col-6 whyUs_last">
+            <div class="insideWhyUsBg">
+              <h2>
+                We Know <span style="color: #0ca5af"> & understand</span> your
+                great choice
+              </h2>
+              <p>
+                Experience unparalleled comfort and luxury at [Hotel Name],
+                ideally located in the heart of Bhubaneswar. Our elegantly
+                designed rooms,! Experience unparalleled comfort and luxury at
+                [Hotel Name], ideally located in the heart of Bhubaneswar. Our
+                elegantly designed rooms,!
+              </p>
             </div>
+            <div class="outerWhyUsBg"></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!----------------- new section ----------------- -->
-      <!-- <section>
+    <!----------------- new section ----------------- -->
+    <!-- <section>
             <div class="row">
                 <div class="col"></div>
                 <div class="col"></div>
@@ -164,277 +133,268 @@
             </div>
         </section> -->
 
-      <!-------------------- experience section --------------------------- -->
+    <!-------------------- experience section --------------------------- -->
 
-      <div class="container">
-        <div class="row statsSection">
-          <div class="col-md-4 statsItem">
-            <h2>30</h2>
-            <div class="lineBetween"></div>
-            <p>Years experience <img src="Image/experience.png" alt="" /></p>
+    <div class="container">
+      <div class="row statsSection">
+        <div class="col-md-4 statsItem">
+          <h2>30</h2>
+          <div class="lineBetween"></div>
+          <p>Years experience <img src="Image/experience.png" alt="" /></p>
+        </div>
+        <div class="col-md-4 statsItem border-middle">
+          <h2>120</h2>
+          <div class="lineBetween"></div>
+          <p>Projects done <img src="Image/like.png" alt="" /></p>
+        </div>
+        <div class="col-md-4 statsItem">
+          <h2>100+</h2>
+          <div class="lineBetween"></div>
+          <p>Happy clients <img src="Image/Happy.png" alt="" /></p>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- services ---------------------------- -->
+    <section>
+      <div class="services" style="background-color: #054d95">
+        <div>
+          <h1 class="fontHeader">
+            One <span style="color: #0ca5af">Place </span>And Many
+            <span style="color: #0ca5af">Services</span>
+          </h1>
+        </div>
+        <div class="row justify-content-evenly flex-wrap">
+          <div class="col-4 box box1">
+            <div><img src="Image/checkMark.png" alt="" /></div>
+            <div>
+              <h4>Fair prices</h4>
+              <p>
+                Experience unparalleled comfort and luxury at [Hotel Name],
+                ideally located in the heart
+              </p>
+            </div>
           </div>
-          <div class="col-md-4 statsItem border-middle">
-            <h2>120</h2>
-            <div class="lineBetween"></div>
-            <p>Projects done <img src="Image/like.png" alt="" /></p>
+
+          <div class="col-4 box box2">
+            <div><img src="Image/like2.png" alt="" /></div>
+            <div>
+              <h4 class="text-white">Verified hotels</h4>
+              <p class="text-white">
+                Experience unparalleled comfort and luxury at [Hotel Name],
+                ideally located in the heart
+              </p>
+            </div>
           </div>
-          <div class="col-md-4 statsItem">
-            <h2>100+</h2>
-            <div class="lineBetween"></div>
-            <p>Happy clients <img src="Image/Happy.png" alt="" /></p>
+
+          <div class="col-4 box box3">
+            <div><img src="Image/security.jpeg" alt="" /></div>
+            <div>
+              <h4>Safety w services</h4>
+              <p>
+                Experience unparalleled comfort and luxury at [Hotel Name],
+                ideally located in the heart
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-------------------------- services ---------------------------- -->
-      <section>
-        <div class="services" style="background-color: #054d95">
+    <!-------------------- our story section ------------------- -->
+    <section>
+      <div class="ourStory mb-5">
+        <h1>Our <span style="color: #0ca5af">Story</span></h1>
+        <div class="row m-0">
+          <div class="col ourStoryPara">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            doloribus vitae. Soluta illum accusantium veritatis dolore,
+            perspiciatis velit! Ullam commodi Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Ut excepturi numquam sit sequi?
+            Repellendus ad dolore, eos possimus nihil deleniti iure fuga. Ab
+            aut odio magni vitae numquam quibusdam natus, nisi reprehenderit!
+            Repudiandae non cupiditate unde, voluptas labore sequi vero
+            aliquam eveniet quia distinctio sunt sint eligendi repellendus
+            voluptatum culpa cum? Dignissimos quidem sapiente totam nostrum
+            officiis assumenda maxime tenetur eveniet nesciunt veritatis, odio
+            consequatur iste at quod quo earum debitis vero, numquam aperiam
+            explicabo eos? Voluptatibus iste saepe obcaecati animi ab
+            architecto debitis ipsum unde id culpa dignissimos, earum veniam
+            aperiam iusto dicta quibusdam. Porro ipsam, eveniet similique
+            incidunt possimus pariatur neque cumque minus nemo illum
+            blanditiis accusamus vel ab saepe eos, sunt aliquid! In saepe rem
+            ullam delectus perferendis nam, quasi asperiores voluptatem
+            provident alias velit explicabo cupiditate expedita labore vel
+            pariatur veniam, praesentium nihil omnis et esse.
+          </div>
+          <div class="col d-flex align-items-center">
+            <img src="Image/ourStory.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------- world section ------------- -->
+
+    <section class="statistics-section">
+      <div class="left-section">
+        <div class="stat-box">
+          <span class="stat-number">32</span>
+          <p class="stat-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+          </p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">2405</span>
+          <p class="stat-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+          </p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">120</span>
+          <p class="stat-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+          </p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">100%</span>
+          <p class="stat-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+          </p>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <img src="Image/worldimage.png" alt="World Map" class="map-image" />
+      </div>
+    </section>
+    <!-------------------- testmonial section ------------------- -->
+
+    <section>
+      <div class="testimonial">
+        <h1 class="d-flex justify-content-center">
+          Be The Next&nbsp; <span style="color: #0ca5af">Explorer</span>
+        </h1>
+      </div>
+      <div class="row justify-content-center m-0">
+        <div class="col ratingBox">
+          <img src="Image/ratingprofile1.png" alt="" />
+          <h4>Sneha Kumari</h4>
           <div>
-            <h1 class="fontHeader">
-              One <span style="color: #0ca5af">Place </span>And Many
-              <span style="color: #0ca5af">Services</span>
-            </h1>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
           </div>
-          <div class="row justify-content-evenly flex-wrap">
-            <div class="col-4 box box1">
-              <div><img src="Image/checkMark.png" alt="" /></div>
-              <div>
-                <h4>Fair prices</h4>
-                <p>
-                  Experience unparalleled comfort and luxury at [Hotel Name],
-                  ideally located in the heart
-                </p>
-              </div>
-            </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cum consequuntur repellat voluptatem nihil,
+            mollitia eum aliquam corrupti debitis illo quam officiis, eius
+            quo, accusamus commodi possimus aliquid maxime! Ex id, in mollitia
+            sequi eaque reiciendis tenetur animi dolorum ipsum.
+          </p>
+        </div>
+        <div class="col ratingBox">
+          <img src="Image/ratingprofile2.png" alt="" />
+          <h4>Manasa Mahunta</h4>
+          <div>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cum consequuntur repellat voluptatem nihil,
+            mollitia eum aliquam corrupti debitis illo quam officiis, eius
+            quo, accusamus commodi possimus aliquid maxime! Ex id, in mollitia
+            sequi eaque reiciendis tenetur animi dolorum ipsum.
+          </p>
+        </div>
+        <div class="col ratingBox">
+          <img src="Image/ratingprofile3.png" alt="" />
+          <h4>Riya Raj</h4>
+          <div>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus cum consequuntur repellat voluptatem nihil,
+            mollitia eum aliquam corrupti debitis illo quam officiis, eius
+            quo, accusamus commodi possimus aliquid maxime! Ex id, in mollitia
+            sequi eaque reiciendis tenetur animi dolorum ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div class="col-4 box box2">
-              <div><img src="Image/like2.png" alt="" /></div>
-              <div>
-                <h4 class="text-white">Verified hotels</h4>
-                <p class="text-white">
-                  Experience unparalleled comfort and luxury at [Hotel Name],
-                  ideally located in the heart
-                </p>
-              </div>
-            </div>
+    <!-- Footer Section -->
 
-            <div class="col-4 box box3">
-              <div><img src="Image/security.jpeg" alt="" /></div>
-              <div>
-                <h4>Safety w services</h4>
-                <p>
-                  Experience unparalleled comfort and luxury at [Hotel Name],
-                  ideally located in the heart
-                </p>
-              </div>
-            </div>
+    <footer>
+      <div class="container-fluid footerContainer">
+        <div class="row footerRow">
+          <div class="col-12 col-md-4 footerCol1">
+            <h5>CONTACT INFO</h5>
+            <h6>Address</h6>
+            <p>NIFT, near kiit campus 6, patia, bhubaneswar.</p>
+            <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+            <h6>Phone Number</h6>
+            <p>1800 123 4567</p>
+            <h6 class="mt-5">Email Address</h6>
+            <a class="text-decoration-none text-white" href="#">info@hotlfinder.com</a>
+          </div>
+          <div class="col-6 col-md-2 footerCol2">
+            <h5>QUICK LINKS</h5>
+            <ul class="ps-0 mt-4 list-unstyled">
+              <li><a href="">Explore Hotels</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Offers and Events</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Travel Tips</a></li>
+              <li><a href="">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 footerCol2">
+            <h5>SUPPORT</h5>
+            <ul class="ps-0 mt-4 list-unstyled">
+              <li><a href="">Support Desk</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Carrer</a></li>
+              <li><a href="">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 footerCol3">
+            <h5>MAILING LIST</h5>
+            <p class="mt-4 pt-2">Sign up for our mailing list to get an latest updates and offers.</p>
+            <input type="mail" placeholder="Your E-mail Address" class="rounded customPlaceholder">
+            <h5 class="mt-5 pt-3">FOLLOW US</h5>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-      </section>
+      </div>
+    </footer>
 
-      <!-------------------- our story section ------------------- -->
-      <section>
-        <div class="ourStory mb-5">
-          <h1>Our <span style="color: #0ca5af">Story</span></h1>
-          <div class="row m-0">
-            <div class="col ourStoryPara">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
-              doloribus vitae. Soluta illum accusantium veritatis dolore,
-              perspiciatis velit! Ullam commodi Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Ut excepturi numquam sit sequi?
-              Repellendus ad dolore, eos possimus nihil deleniti iure fuga. Ab
-              aut odio magni vitae numquam quibusdam natus, nisi reprehenderit!
-              Repudiandae non cupiditate unde, voluptas labore sequi vero
-              aliquam eveniet quia distinctio sunt sint eligendi repellendus
-              voluptatum culpa cum? Dignissimos quidem sapiente totam nostrum
-              officiis assumenda maxime tenetur eveniet nesciunt veritatis, odio
-              consequatur iste at quod quo earum debitis vero, numquam aperiam
-              explicabo eos? Voluptatibus iste saepe obcaecati animi ab
-              architecto debitis ipsum unde id culpa dignissimos, earum veniam
-              aperiam iusto dicta quibusdam. Porro ipsam, eveniet similique
-              incidunt possimus pariatur neque cumque minus nemo illum
-              blanditiis accusamus vel ab saepe eos, sunt aliquid! In saepe rem
-              ullam delectus perferendis nam, quasi asperiores voluptatem
-              provident alias velit explicabo cupiditate expedita labore vel
-              pariatur veniam, praesentium nihil omnis et esse.
-            </div>
-            <div class="col d-flex align-items-center">
-              <img src="Image/ourStory.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- Footer lastpart -->
+    <section class="footerEnd container-fluid pt-4 px-5">
+      <div class="pb-3">
+        <hr class="thickLine">
+      </div>
+      <div class="d-flex text-white row justify-content-around">
+        <div class="col-12 col-md-auto"><i class="bi bi-c-circle"></i> 2024 Hotel Finder. All rights reserved.</div>
+        <div class="col-12 col-md-auto text-center">Privacy Policy</div>
+        <div class="col-12 col-md-auto text-center">Terms of Service</div>
+      </div>
+    </section>
+  </div>
+</body>
 
-      <!-------------------- world section ------------- -->
-
-      <section class="statistics-section">
-        <div class="left-section">
-          <div class="stat-box">
-            <span class="stat-number">32</span>
-            <p class="stat-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
-            </p>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">2405</span>
-            <p class="stat-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
-            </p>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">120</span>
-            <p class="stat-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
-            </p>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">100%</span>
-            <p class="stat-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
-            </p>
-          </div>
-        </div>
-
-        <div class="right-section">
-          <img src="Image/worldimage.png" alt="World Map" class="map-image" />
-        </div>
-      </section>
-      <!-------------------- testmonial section ------------------- -->
-
-      <section>
-        <div class="testimonial">
-          <h1 class="d-flex justify-content-center">
-            Be The Next&nbsp; <span style="color: #0ca5af">Explorer</span>
-          </h1>
-        </div>
-        <div class="row justify-content-center m-0">
-          <div class="col ratingBox">
-            <img src="Image/ratingprofile1.png" alt="" />
-            <h4>Sneha Kumari</h4>
-            <div>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus cum consequuntur repellat voluptatem nihil,
-              mollitia eum aliquam corrupti debitis illo quam officiis, eius
-              quo, accusamus commodi possimus aliquid maxime! Ex id, in mollitia
-              sequi eaque reiciendis tenetur animi dolorum ipsum.
-            </p>
-          </div>
-          <div class="col ratingBox">
-            <img src="Image/ratingprofile2.png" alt="" />
-            <h4>Manasa Mahunta</h4>
-            <div>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus cum consequuntur repellat voluptatem nihil,
-              mollitia eum aliquam corrupti debitis illo quam officiis, eius
-              quo, accusamus commodi possimus aliquid maxime! Ex id, in mollitia
-              sequi eaque reiciendis tenetur animi dolorum ipsum.
-            </p>
-          </div>
-          <div class="col ratingBox">
-            <img src="Image/ratingprofile3.png" alt="" />
-            <h4>Riya Raj</h4>
-            <div>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus cum consequuntur repellat voluptatem nihil,
-              mollitia eum aliquam corrupti debitis illo quam officiis, eius
-              quo, accusamus commodi possimus aliquid maxime! Ex id, in mollitia
-              sequi eaque reiciendis tenetur animi dolorum ipsum.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="container-fluid footerContainer">
-          <div class="row footerRow">
-            <div class="col-4 footerCol1">
-              <h5>CONTACT INFO</h5>
-              <h6>Address</h6>
-              <p>NIFT, near kiit campus 6, patia, bhubaneswar.</p>
-              <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
-              <h6>Phone Number</h6>
-              <p>1800 123 4567</p>
-              <h6 class="mt-5">Email Address</h6>
-              <a class="text-decoration-none text-white" href="#"
-                >info@hotlfinder.com</a
-              >
-            </div>
-            <div class="col-2 footerCol2">
-              <h5>QUICK LINKS</h5>
-              <ul class="ps-0 mt-4 list-unstyled">
-                <li><a href="">Explore Hotels</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Offers and Events</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Travel Tips</a></li>
-                <li><a href="">Blogs</a></li>
-              </ul>
-            </div>
-            <div class="col-2 footerCol2">
-              <h5>SUPPORT</h5>
-              <ul class="ps-0 mt-4 list-unstyled">
-                <li><a href="">Support Desk</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms of Use</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Carrer</a></li>
-                <li><a href="">FAQs</a></li>
-              </ul>
-            </div>
-            <div class="col-4 footerCol3">
-              <h5>MAILING LIST</h5>
-              <p class="mt-4 pt-2">
-                Sign up for our mailing list to get an latest updates and
-                offers.
-              </p>
-              <input
-                type="mail"
-                placeholder="Your E-mail Address"
-                class="rounded customPlaceholder"
-              />
-              <h5 class="mt-5 pt-3">FOLLOW US</h5>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-              <a href=""><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <!-- Footer lastpart -->
-      <section class="footerEnd container-fluid pt-4 px-5">
-        <div class="pb-3">
-          <hr class="thickLine" />
-        </div>
-        <div class="d-flex text-white row">
-          <div class="col-9">
-            <i class="bi bi-c-circle"></i> 2024 Hotel Finder. All rights
-            reserved.
-          </div>
-          <div class="col ms-5 ps-5">Privacy Policy</div>
-          <div class="col">Terms of Service</div>
-        </div>
-      </section>
-    </div>
-  </body>
 </html>

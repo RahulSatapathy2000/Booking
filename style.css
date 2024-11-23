@@ -487,10 +487,10 @@ body {
 .footerContainer {
   background: #093d62;
   width: 100%;
-  height: 447px;
+  height: auto;
 }
 .footerRow {
-  padding: 80px;
+  padding: 60px 60px 60px 100px;
   color: white;
 }
 .footerRow p,
@@ -540,8 +540,8 @@ a {
 
 .footerEnd {
   width: 100%;
-  height: 89px;
   background: #042f51;
+  padding: 15px 0;
 }
 .thickLine {
   height: 2.5px;
@@ -549,10 +549,35 @@ a {
   background: rgb(255, 255, 255);
   opacity: 0.6;
 }
-
 .footerEnd div {
   font-weight: 350;
   font-size: 14px;
+}
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .footerRow {
+    padding: 40px;
+  }
+  .footerCol1,
+  .footerCol2,
+  .footerCol3 {
+    margin-bottom: 30px;
+  }
+  .footerEnd {
+    text-align: center;
+  }
+  .footerEnd .col {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerRow {
+    padding: 20px;
+  }
+  .footerEnd .d-flex {
+    flex-direction: column;
+  }
 }
 
 /* ------------------------- About Page ----------------------- */
@@ -843,7 +868,7 @@ a {
   z-index: -1;
 }
 
-/* ----------  */
+/* ----Property Results Container------  */
 
 .showResult {
   display: flex;
@@ -881,7 +906,7 @@ a {
   color: #042f51;
 }
 
-/* -------  */
+/* ---Filter Bar----  */
 .filterBar {
   background: #041d2bbf;
 }
@@ -904,14 +929,38 @@ a {
 }
 
 /*-------------------------------------- search result section ------------------------------ */
-/*---- right side ---- */
+
+/*---- Left side ---- */
+
 .filter_option {
   background: #dbe9f2;
-  padding: 40px 0 0 20px;
+  padding: 30px 0 20px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 193, 193);
+  margin: 40px 0 80px 0;
 }
-.filter_option input {
-  background: #dbe9f2;
+.filter_option h6 {
+  color: #093d62;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
 }
+.filter_option label {
+  display: flex;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #093d62;
+}
+.left_text {
+  margin-left: 5px;
+}
+.right_text {
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+/* ------ Right side ---- */
+
 .hotel_search h2 {
   font-size: 32px;
   font-family: "Tiro Tamil", serif;
@@ -920,7 +969,7 @@ a {
 .hotel_search p {
   font-size: 14px;
   font-family: "Tiro Telugu", serif;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-bottom: 0;
 }
 .hotel_search p span {
@@ -930,6 +979,10 @@ a {
   border: 1px solid rgb(197, 191, 191);
   border-radius: 15px;
   box-shadow: 0 3px 5px rgb(161, 156, 156);
+  padding: 12px;
+}
+.hotel_info {
+  padding-left: 16px;
 }
 .hotel_info h4 {
   font-size: 24px;
@@ -940,6 +993,9 @@ a {
   font-size: 13px;
   color: rgb(255, 166, 0);
 }
+.hotel_info :nth-child(3) {
+  margin-top: 20px;
+}
 .hotel_desc p {
   font-size: 12px;
   font-family: "Shanti", serif;
@@ -947,10 +1003,10 @@ a {
   margin: 0;
   line-height: 15px;
 }
-
 .hotel_info h5 {
   font-size: 12px;
   color: #ce651a;
+  margin: 24px 0;
 }
 .hotel_info h6 {
   font-size: 11px;
@@ -958,13 +1014,17 @@ a {
   margin-bottom: 0;
 }
 
-/* ------  */
+/* ---Left Side---  */
 .rating_info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.hotel_rating p {
+.hotel_rating {
+  text-align: end;
+}
+.rating_info p,
+.price_info p {
   margin-bottom: 0;
   font-size: 11px;
   color: #042f51;
@@ -999,4 +1059,1520 @@ a {
   font-family: "Tiro Tamil", serif;
   font-size: 14px;
   border-radius: 5px;
+  padding: 8px 20px;
+}
+.more_results {
+  font-family: "Tiro Tamil", serif;
+  padding: 12px 25px;
+  float: right;
+  background: #0862a3;
+  color: white;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1166px) {
+  .hotel_desc img {
+    width: auto;
+    height: auto;
+  }
+  .hotel_info h4 {
+    font-size: 18px;
+  }
+  .hotel_info :nth-child(3) {
+    margin-top: 7px;
+  }
+  .hotel_info h5 {
+    margin: 16px 0;
+  }
+  .price_info {
+    margin-top: 10px;
+  }
+  .price_info button {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .price_info h3 {
+    font-size: 20px;
+  }
+  .rating_info {
+    flex-direction: column;
+    align-items: end;
+  }
+  .filter_option {
+    padding: 20px 0 20px 10px;
+  }
+  .right_text {
+    padding-right: 10px;
+  }
+  .filter_option h6 {
+    font-size: 13px;
+  }
+  .filter_option label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 992px) {
+  .hotel_info {
+    padding-left: 8px;
+  }
+  .hotel_info p {
+    font-size: 11px;
+  }
+  .hotel_info h5 {
+    margin: 10px 0;
+    font-size: 11px;
+  }
+  .price_info {
+    margin-top: 0px;
+  }
+  .price_info button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .hotel_result {
+    padding: 8px;
+  }
+  .filter_option label {
+    font-size: 10px;
+  }
+  .filter_option {
+    padding: 20px 0 20px 5px;
+  }
+  .right_text {
+    padding-right: 5px;
+  }
+  .filter_option h6 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 808px) {
+  .content_1 {
+    display: none;
+  }
+  .content_2 {
+    width: 90%;
+  }
+  .showResult {
+    display: none;
+  }
+  .filterBar {
+    display: none;
+  }
+  .formSection {
+    margin-top: -32vh;
+  }
+}
+
+/* ----------------------------------------Booking Page 2---------------------------------  */
+.side_1 {
+  margin-right: 16px;
+}
+.detail_desc {
+  background: #dbe9f2;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 193, 193);
+  padding: 20px 10px 20px 30px;
+}
+.detail_desc h4 {
+  color: #0ca5af;
+  font-family: "Tiro Tamil", serif;
+}
+.detail_desc h6 {
+  margin: 10px 0px 20px 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.detail_desc ul {
+  padding: 0;
+  margin-left: 16px;
+  font-size: 14px;
+}
+.check_reviews {
+  background: #dbe9f2;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 193, 193);
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.check_reviews h4 {
+  color: #0ca5af;
+  font-size: 26px;
+  font-family: "Tiro Tamil", serif;
+}
+.detail_rating_info h6 {
+  background-color: #093d62;
+  color: white;
+  font-size: 11px;
+  padding: 10px 8px;
+}
+.detail_rating_info h5 {
+  color: #0ca5af;
+  font-size: 15px;
+  font-family: "Tiro Tamil", serif;
+  margin-bottom: 0;
+}
+.detail_rating_info p,
+.detail_price_info p {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #042f51;
+  font-family: "Shanti", serif;
+}
+.detail_rating_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail_price_info {
+  margin-top: 40px;
+}
+.detail_price_info h3 {
+  font-family: "Poppins", serif;
+  color: #cd651a;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.detail_price_info button {
+  background: #0862a3;
+  color: white;
+  border: none;
+  font-family: "Tiro Tamil", serif;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+.check_reviews .detail_rating_info {
+  justify-content: flex-start;
+}
+.inside_rating {
+  margin-left: 20px;
+}
+.inside_rating p {
+  font-size: 14px;
+}
+.check_reviews h3 {
+  font-size: 21px;
+}
+.check_reviews button {
+  font-family: "Shanti", sans-serif;
+  font-size: 20px;
+  padding: 12px 30px;
+  background: #0862a3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.hr_line {
+  border: 1px solid rgb(140, 139, 139);
+  margin: 24px 0;
+}
+.hotel_search h1 {
+  color: #0ca5af;
+  font-family: "Shanti", sans-serif;
+  margin: 10px 0 5px -2px;
+  font-size: 40px;
+}
+
+/* --------  */
+
+.hotel_inner_container {
+  margin-top: 28px;
+}
+.hotel_img_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 10px;
+}
+.first_image {
+  flex: 1 1 65%;
+  position: relative;
+}
+.first_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.rightside_images {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top_image {
+  flex: 1;
+}
+.top_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.bottom_image {
+  gap: 10px;
+  flex: 1;
+  position: relative;
+}
+.text_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 0 15px 0 0;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 100;
+  font-family: "Tiro Tamil", serif;
+  border-radius: 10px;
+}
+.bottom_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.paras {
+  font-family: "Tiro Tamil", serif;
+  font-size: 15px;
+}
+.facilities h3 {
+  color: #0ca5af;
+  font-size: 24px;
+  font-family: "Tiro Tamil", serif;
+}
+.more_facilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.more_facilities i {
+  color: #355167;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.more_facilities h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+.more_facilities div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amenities {
+  color: #0ca5af;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 1265px) {
+  .check_reviews {
+    padding: 16px;
+  }
+  .check_reviews h4 {
+    font-size: 20px;
+  }
+  .detail_rating_info h6 {
+    font-size: 9px;
+  }
+  .inside_rating p,
+  .detail_price_info p {
+    font-size: 12px;
+  }
+  .detail_price_info button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .detail_price_info h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .text_overlay p {
+    font-size: 15px;
+  }
+  .more_facilities i {
+    font-size: 20px;
+  }
+  .more_facilities h6,
+  .more_facilities h5 {
+    font-size: 10px;
+  }
+  .main_content {
+    flex-direction: column-reverse;
+  }
+  .side_1 {
+    width: 97%;
+    margin: 0;
+  }
+  .detail_desc {
+    margin-left: 10px;
+  }
+  .side_1 img,
+  .check_reviews,
+  .detail_desc h6,
+  .check_filter {
+    display: none;
+  }
+  .desc_points {
+    display: flex;
+    justify-content: space-around;
+  }
+  .side_2 {
+    width: 97%;
+  }
+  .detail_desc h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .first_image {
+    flex: 1 1 60%;
+  }
+  .hotel_search h1 {
+    font-size: 30px;
+  }
+  .hotel_search p {
+    font-size: 13px;
+  }
+  .paras p {
+    font-size: 13px;
+  }
+  .facilities h3 {
+    font-size: 20px;
+  }
+  .more_facilities i {
+    font-size: 16px;
+  }
+  .more_facilities h6,
+  .more_facilities h5 {
+    font-size: 12px;
+  }
+  .detail_desc {
+    padding: 10px;
+  }
+  .detail_desc li {
+    font-size: 11px;
+  }
+}
+@media (max-width: 576px) {
+  .text_overlay p {
+    font-size: 11px;
+  }
+  .hotel_search h2,
+  .hotel_search h1 {
+    font-size: 24px;
+  }
+  .hotel_search p {
+    font-size: 10px;
+  }
+  .paras p {
+    font-size: 11px;
+  }
+  .more_facilities i {
+    font-size: 14px;
+  }
+  .more_facilities h6,
+  .more_facilities h5 {
+    font-size: 6px;
+  }
+  .detail_desc {
+    padding: 5px;
+  }
+  .detail_desc h4 {
+    font-size: 14px;
+  }
+  .detail_desc li {
+    font-size: 9px;
+  }
+}
+@media (max-width: 480px) {
+  .detail_desc li {
+    font-size: 7px;
+  }
+}
+
+/* ------------check Availability Section--------------  */
+.check_availability {
+  color: #0ca5af;
+  font-size: 26px;
+  font-family: "Tiro Tamil", serif;
+}
+.check_availability h4 {
+  margin-bottom: 16px;
+}
+.update_search_sect {
+  display: flex;
+  background-color: #041d2bbf;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.update_search_sect label {
+  color: white;
+  margin: 15px 0 10px 18px;
+  font-family: "Tiro Tamil", serif;
+}
+.update_search_sect input {
+  background-color: #042f51;
+  border-radius: 10px;
+  border: 1px solid rgb(181, 181, 181);
+  margin: 0 0 20px 10px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding: 10px 10px 10px 35px;
+  color: white;
+}
+.update_search:nth-child(3) input {
+  width: 90%;
+}
+.update_search:nth-child(4) input {
+  width: 90%;
+  margin: 0 0 20px 0;
+}
+.update_search {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.update_search:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update_search button {
+  background-color: #0862a3;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.update_search input[type="date"]:focus {
+  appearance: none;
+}
+.inputImageSize2::placeholder {
+  color: white;
+  padding-left: 5px;
+  font-size: 10px;
+  font-family: "Tiro Tamil";
+  font-weight: 300;
+}
+
+/* Top Recomended Section  */
+.top_recomended {
+  font-family: "Shanti", sans-serif;
+}
+.top_recomended h1 {
+  font-size: 40px;
+}
+.prem {
+  color: #0ca5af;
+}
+.rec {
+  font-size: 16px;
+  color: orange;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 0.5px solid orange;
+  border-radius: 10px;
+}
+.top_recomended h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.top_recomended a {
+  color: black;
+}
+
+/* <!-- -----------------------------------------------Premium Room Section------------------------------------------------------------------------------- --> */
+.premium_room {
+  margin-bottom: 70px;
+}
+/* Grid container */
+.hotel_image_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left section (2fr) and right section (1fr) */
+  gap: 30px;
+  padding: 0;
+}
+
+/* Left section (images) */
+.left_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for images */
+  gap: 15px;
+}
+
+.left_section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.in_left_sect {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Right section (room details) */
+/* .right_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+/* Room details styling */
+.room_details {
+  background: #dbe9f2;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 193, 193);
+  padding: 8px 20px;
+}
+
+.room_details h4 {
+  color: #0ca5af;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.room_details ul {
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.room_details li {
+  font-size: 15px;
+}
+
+.room_details li::marker {
+  font-size: 10px;
+}
+
+.room_details p {
+  font-weight: 400;
+  font-size: 11px;
+  margin: 0;
+}
+
+.room_details h3 {
+  color: #cd651a;
+  margin: 0;
+}
+
+.details_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room_details button {
+  font-family: "Shanti", sans-serif;
+  font-size: 20px;
+  padding: 12px 30px;
+  background: #0862a3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hotel_image_container {
+    grid-template-columns: 1fr;
+  }
+  .left_section {
+    grid-template-columns: 1fr;
+  }
+  .premium_room {
+    max-width: 750px;
+  }
+}
+@media (max-width: 992px) {
+  .hotel_image_container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .left_section {
+    grid-column: 1 / span 2;
+  }
+  .right_section {
+    display: flex;
+    gap: 15px;
+  }
+  .premium_room {
+    max-width: 980px;
+  }
+  .premium_room .top_recomended {
+    margin-left: 10px;
+  }
+}
+
+/* <!-- ------------------------------------------------------------------------------------------------------------------------------ --> */
+
+/* Property Rules Container  */
+.property_rules {
+  font-family: "Poppins", sans-serif;
+  background-color: #dbe9f2;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 193, 193);
+  padding: 30px 40px;
+}
+.property_rules h3 {
+  font-family: "Tiro Tamil", serif;
+  color: #0ca5af;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.property_rules h6 {
+  font-size: 16px;
+  margin: 0 10px;
+}
+.property_rules ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.property_rules li {
+  font-size: 15px;
+}
+.property_rules li::marker {
+  font-size: 10px;
+}
+.property_rules a {
+  text-decoration: none;
+  color: #0ca5af;
+  margin-left: 18px;
+}
+@media (max-width: 992px) {
+  .rules {
+    padding: 40px;
+    max-width: 97%;
+  }
+}
+@media (max-width: 768px) {
+  .property_rules {
+    padding: 15px;
+  }
+  .property_rules h3 {
+    font-size: 15px;
+  }
+  .property_rules h6 {
+    font-size: 12px;
+    margin: 0 2px;
+  }
+  .property_rules li {
+    font-size: 12px;
+  }
+  .property_rules a {
+    font-size: 13px;
+  }
+  .property_rules ul {
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .property_rules {
+    padding: 8px;
+  }
+  .property_rules h3 {
+    font-size: 14px;
+  }
+  .property_rules h6 {
+    font-size: 9px;
+    margin: 0 2px;
+  }
+  .property_rules li {
+    font-size: 10px;
+  }
+  .property_rules a {
+    font-size: 11px;
+  }
+  .property_rules ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+}
+
+/* ----------------------------User Reviews Section--------------------------  */
+/* Right Side  */
+.user_rating h4 {
+  color: #0ca5af;
+}
+.user_review {
+  background-color: #dbe9f2;
+  border-radius: 10px;
+  padding: 20px 10px;
+  border: 1px solid rgb(206, 193, 193);
+  margin-right: 30px;
+}
+.user_review p {
+  background-color: #093d62;
+  padding: 12px 15px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.user_review h5 {
+  color: #0ca5af;
+  font-size: 24px;
+  font-weight: 400;
+}
+.user_review h6 {
+  color: #093d62;
+  font-size: 13px;
+  font-family: "Tiro Tamil", serif;
+}
+.rating_review .top_recomended {
+  margin-top: 50px;
+}
+.progress_bar {
+  font-family: "Tiro Tamil", serif;
+  font-size: 14px;
+}
+.progress_bar div {
+  margin-bottom: 10px;
+}
+.progress_bar div :nth-child(3) {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.progress_bar progress {
+  margin: 0 5px;
+  width: 60%;
+  height: 10px;
+}
+.colored {
+  accent-color: #093d62;
+}
+.rating_bar {
+  display: flex;
+  flex-direction: column; /* Arrange rows vertically */
+  gap: 5px; /* Space between rows */
+}
+.rating_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rating_row label:first-of-type {
+  flex: 3; /* First label takes two column */
+  text-align: left; /* Align text to the left */
+  font-family: "Tiro Tamil", serif;
+}
+.rating_row progress {
+  flex: 8; /* Progress bar takes more space */
+  width: 100%;
+  height: 18px; /* Adjust to fill available space */
+}
+.rating_row label:last-of-type {
+  flex: 1; /* Second label takes one column */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.review_btn {
+  color: #ffac0a;
+  border: 1px solid #ffac0a;
+  background-color: #dbe9f2;
+  padding: 5px 48px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/* right side  */
+.user_rating {
+  font-family: "Tiro Tamil", serif;
+}
+.image_review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+.image_review img {
+  border-radius: 10px;
+  flex: 1 1 auto;
+  max-width: calc((100% - 40px) / 5);
+  height: 110px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.image_review .text_overlay {
+  width: 19%;
+  float: right;
+  margin-left: 81%;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  padding: 12px;
+}
+.review_dropdown {
+  float: right;
+}
+.name_detail {
+  margin-left: 16px;
+}
+.review_dropdown select {
+  background-color: #d9d9d9;
+}
+.review_text {
+  margin-top: 48px;
+}
+.review_text h5 {
+  color: #0ca5af;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.review_text h6 {
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+.circle_responsive {
+  width: 50px; /* Responsive width */
+  height: 50px;
+  background-color: #8e44ad;
+  border-radius: 50%;
+}
+.like_dislike i {
+  font-size: 20px;
+}
+.review_star i {
+  font-size: 14px;
+}
+.color1 {
+  color: #ffac0a;
+}
+.color2 {
+  color: #ffdb93;
+}
+.user_detail i span {
+  margin-right: 16px;
+  font-size: 12px;
+}
+.user_detail h5 {
+  font-size: 20px;
+  color: #0ca5af;
+}
+.user_detail h6 {
+  font-size: 12px;
+}
+.text_review h6 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.text_review h6:first-of-type {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .rules {
+    padding: 40px;
+    max-width: 95%;
+  }
+  .user_review {
+    display: none;
+  }
+  .user_rating {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .rating_review div:first-of-type {
+    max-width: 100%;
+  }
+  .rating_review .top_recomended {
+    margin-left: 10px;
+  }
+  .rating_review .top_recomended h1 {
+    font-size: 30px;
+  }
+  .rating_review .top_recomended h4 {
+    font-size: 15px;
+  }
+  .image_review img:nth-child(4) {
+    /* display: none; */
+  }
+  .image_review img {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .image_review img {
+    height: 125px;
+  }
+}
+@media (max-width: 576px) {
+  .image_review img {
+    height: 100px;
+  }
+  .image_review .text_overlay p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .rating_review .top_recomended {
+    display: none;
+  }
+  .image_review {
+    gap: 5px;
+  }
+  .image_review img:nth-child(4) {
+    display: none;
+  }
+  .image_review img {
+    max-width: calc((100% + 50px) / 5);
+    height: 70px;
+  }
+  .image_review .text_overlay {
+    font-size: 11px;
+    width: 23%;
+    margin-left: 73%;
+    display: inline-block;
+  }
+  .image_review .text_overlay p {
+    font-size: 11px;
+  }
+  .review_dropdown select {
+    font-size: 12px;
+  }
+  .review_text h5 {
+    font-size: 18px;
+  }
+  .review_text h6 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .user_detail h5 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .user_detail h6 {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .circle_responsive {
+    width: 30px;
+    height: 30px;
+  }
+  .name_detail {
+    margin-left: 5px;
+  }
+  .review_star i {
+    font-size: 10px;
+  }
+  .like_dislike i {
+    font-size: 14px;
+  }
+  .like_dislike span {
+    font-size: 12px;
+  }
+  .text_review h6 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .rating_review .more_results {
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-right: 20px;
+  }
+  /* -------- */
+  .premium_room {
+    display: none;
+  }
+  /* ----------- */
+}
+
+/* -------------------- grid Container ------------------- */
+@media (max-width: 480px) {
+  .grid_container {
+    padding: 10px 12px;
+  }
+  .grid_container h1 {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .grid_container p {
+    font-size: 11px;
+  }
+}
+
+/*------------------- Your Details Page -------------------- */
+.current_stage {
+  background-color: #dbe9f2;
+}
+.current_stage .hr_line {
+  width: 28%;
+}
+.current_stage i {
+  font-size: 25px;
+  color: #0862a3;
+  margin-bottom: 16px;
+}
+.current_stage i:last-of-type {
+  color: #093d62;
+}
+.current_stage h4 {
+  margin: 40px 0 40px 10px;
+  font-size: 19px;
+  font-family: "Tiro Tamil", serif;
+}
+.current_stage .hr_line {
+  margin: 0 10px;
+  border: 1px solid #042b40;
+}
+
+@media (max-width: 1040px) {
+  .current_stage h4 {
+    font-size: 16px;
+    margin: 40px 0 40px 5px;
+  }
+  .current_stage i {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .current_stage .hr_line {
+    width: 20%;
+  }
+}
+@media (max-width: 865px) {
+  .current_stage h4 {
+    font-size: 14px;
+    margin: 30px 0 30px 3px;
+  }
+  .current_stage i {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 560px) {
+  .current_stage h4 {
+    font-size: 13px;
+    margin: 25px 0 25px 2px;
+  }
+  .current_stage i {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .current_stage .hr_line {
+    width: 15%;
+  }
+}
+@media (max-width: 440px) {
+  .current_stage h4 {
+    font-size: 10px;
+    margin: 20px 0 20px 2px;
+  }
+  .current_stage i {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .current_stage .hr_line {
+    width: 13%;
+    margin: 0 3px;
+  }
+}
+
+/* ----------------- Your Details Section ------------------ */
+.details_section {
+  margin: 0;
+  margin-top: 36px;
+  gap: 30px;
+}
+
+/* ----------left Section --------- */
+
+.booking_detail {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+.hotel_booking_detail {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.hotel_booking_detail h5 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.hotel_booking_detail h3 {
+  font-size: 26px;
+  font-family: "Tiro Tamil", serif;
+}
+.hotel_booking_detail h4 {
+  font-size: 19px;
+  font-family: "Tiro Tamil", serif;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.hotel_booking_detail p {
+  background-color: #0862a3;
+  color: white;
+  padding: 3px 5px;
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.fa-solid {
+  font-size: 16px;
+  color: #042d42;
+  line-height: 36px;
+}
+.fa-solid span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 4px;
+  margin-right: 20px;
+  color: #042d42;
+}
+.your_booking_detail {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  padding: 20px;
+}
+.your_booking_detail h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.check_in_out {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.your_booking_detail h4 {
+  font-size: 16px;
+  font-family: "Tiro Tamil", serif;
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+.your_booking_detail h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.check_in_out h4 {
+  font-size: 16px;
+  font-family: "Tiro Tamil", serif;
+}
+.check_in_out h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.selected {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.booking_detail .dropdown-center {
+  float: right;
+}
+.selected h5 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.selected p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.selected a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.price_summary {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.price_summary h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px;
+}
+.tax_fees {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0ca5af40;
+  padding: 30px 20px 5px 20px;
+}
+.tax_fees h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.tax_fees h4 {
+  font-size: 14px;
+}
+.tax_fees div:last-of-type {
+  text-align: center;
+}
+.price_summary h6 {
+  font-size: 15px;
+  margin: 20px 20px 50px 60px;
+}
+.price_summary h6 span {
+  float: right;
+}
+.payment_schedule {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.payment_schedule h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.payment_schedule h6 {
+  font-size: 15px;
+  color: #308614;
+  font-weight: 400;
+}
+.payment_schedule p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.payment_schedule p span {
+  float: right;
+}
+/* -------Right Section ------ */
+
+.your_detail {
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.sign_text {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+}
+.sign_text h4 {
+  font-size: 19px;
+  line-height: 28px;
+  font-family: "Tiro Tamil", serif;
+  margin-bottom: 0;
+}
+.your_info {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.your_info h3 {
+  font-size: 23px;
+  font-weight: 600;
+}
+.your_info h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 14px;
+  margin-bottom: 20px;
+}
+.almost_done {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px 10px 20px 50px;
+  background-color: #b2b2b242;
+}
+.almost_done h4 {
+  font-size: 19px;
+  margin-bottom: 0;
+  font-family: "Tiro Tamil", serif;
+}
+.form_detail label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.form_detail input,
+.form_detail select {
+  border: 2px solid black;
+  height: 3.3rem;
+  border-radius: 10px;
+}
+.your_info p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.good_to_know {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+.good_to_know div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.good_to_know i {
+  font-size: 30px;
+  color: #308614;
+  margin: 0;
+}
+.good_to_know span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.standard_room {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+.room_facility div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.room_facility i {
+  text-align: center;
+  width: 30px;
+  font-size: 20px;
+}
+.room_facility p {
+  margin: 0;
+  font-weight: 600;
+  color: #308614;
+  font-size: 15px;
+}
+.room_facility span {
+  font-weight: 400;
+  color: #308614;
+  font-size: 15px;
+}
+.label_span span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.label_span p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.special_request {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 40px 20px 20px 24px;
+}
+.special_request p {
+  padding: 5px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.special_request h6 {
+  padding: 5px 10px 10px 10px;
+  font-weight: 600;
+}
+.special_request span {
+  font-weight: 300;
+}
+.special_request textarea {
+  border: 1px solid rgb(134, 125, 125);
+  margin-left: 10px;
+}
+.arrival_time {
+  border: 1px solid rgb(134, 125, 125);
+  border-radius: 10px;
+  margin-bottom: 100px;
+  padding: 24px;
+}
+.arrival_time p {
+  margin: 30px 10px 0 20px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.arrival_time h6 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.arrival_time h6 span {
+  font-weight: 400;
+}
+/* ------------------------------------ */
+
+.custom-time-input {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.custom-time-input input[type="number"] {
+  width: 55px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #a19999;
+  border-radius: 5px;
+  outline: none;
+}
+
+.custom-time-input span {
+  font-size: 18px;
+  color: #555;
+}
+
+.custom-time-input input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ----------------------------- */
+.final_detail {
+  float: right;
+  color: white;
+  font-family: "Tiro Tamil", serif;
+  padding: 10px 16px;
+  background-color: #0862a3;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+.final_detail img {
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .details_section {
+    flex-direction: column;
+  }
+  .booking_detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .your_detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
 }
